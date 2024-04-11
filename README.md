@@ -1,5 +1,5 @@
 ## 🚀 Landing page MABRICK with ASTRO and TailwindCSS
-
+![Alt text](imagen.png)
 
 
 ## 🧞 Commands
