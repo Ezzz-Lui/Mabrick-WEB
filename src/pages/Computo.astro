@@ -1,0 +1,13 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Layout from '../layouts/Layout.astro';
+import ContentSection from '../components/ContentSection.astro';
+---
+
+<Layout title="Mabrick">
+	<main >
+        <ContentSection/>
+		<slot/>
+	</main>
+
+</Layout>
