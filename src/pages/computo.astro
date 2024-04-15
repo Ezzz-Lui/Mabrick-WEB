@@ -1,0 +1,18 @@
+---
+// Supports weights 100-900
+import { ViewTransitions } from 'astro:transitions';
+
+import Layout from '../layouts/Layout.astro';
+import Services from '../components/Services.astro';
+import OtherServices from '../components/OtherServices.astro'
+---
+
+<Layout title="Mabrick">
+	<main >
+		<OtherServices/>
+		<Services/>
+		<slot/>
+	</main>
+
+</Layout>
+
