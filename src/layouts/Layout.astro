@@ -17,7 +17,6 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head  >
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
@@ -53,9 +52,21 @@ const { title } = Astro.props;
 			}
 		
 		</style>
-
+		<script>
+			import { Modal } from 'flowbite'
 		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+			// Seleccionar el botón y el elemento modal
+			const $buttonElement = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
+			const $modalElement: HTMLElement | null = document.querySelector('#defaultModal');
+		
+			// Crear una nueva instancia del modal
+			const modal = new Modal($modalElement);
+		
+			// Toggle del modal cuando se hace clic en el botón
+			if ($buttonElement) {
+				$buttonElement.addEventListener('click', () => modal.toggle());
+			}
+		</script>
 	</body>
 </html>
 
