@@ -1,8 +1,11 @@
 ## 🚀 Landing page MABRICK with ASTRO and TailwindCSS
 ![Alt text](imagen.png)
 
+## Preview Website
+https://mabrick.vercel.app/
 
-## 🧞 Commands
+
+## 🧞 Commandos
 
 All commands are run from the root of the project, from a terminal:
 
