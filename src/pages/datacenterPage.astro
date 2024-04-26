@@ -1,0 +1,17 @@
+---
+// Supports weights 100-900
+import { ViewTransitions } from 'astro:transitions';
+
+import '@fontsource-variable/onest';
+import Layout from '../layouts/Layout.astro';
+import Datacenter from '../components/Datacenter.astro';
+---
+
+<Layout title="Mabrick">
+	<main >
+		<Datacenter/>
+		<slot/>
+	</main>
+</Layout>
+
+
