@@ -8,21 +8,22 @@ import Features from '../components/Features.astro';
 import Footer from '../components/Footer.astro';
 
 interface Props {
-	title: string;
+	title: string
+	description: string
 }
 
-const { title } = Astro.props;
+const { description,title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head  >
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="https://i0.wp.com/mabrick.net/wp-content/uploads/2023/05/cropped-Isotipo-Blanco.jpg?fit=180%2C180&ssl=1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Mabrick</title>
+		<title>{title}</title>
 		<ViewTransitions />
 	</head>
 	
@@ -52,21 +53,6 @@ const { title } = Astro.props;
 			}
 		
 		</style>
-		<script>
-			import { Modal } from 'flowbite'
-		
-			// Seleccionar el botón y el elemento modal
-			const $buttonElement = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
-			const $modalElement: HTMLElement | null = document.querySelector('#defaultModal');
-		
-			// Crear una nueva instancia del modal
-			const modal = new Modal($modalElement);
-		
-			// Toggle del modal cuando se hace clic en el botón
-			if ($buttonElement) {
-				$buttonElement.addEventListener('click', () => modal.toggle());
-			}
-		</script>
 	</body>
 </html>
 
