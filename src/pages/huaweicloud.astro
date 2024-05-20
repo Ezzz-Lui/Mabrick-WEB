@@ -1,0 +1,127 @@
+---
+import '@fontsource-variable/onest';
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import Features from '../components/Features.astro';
+import ContentSection from '../components/ContentSection.astro';
+import Services from '../components/Services.astro';
+import OtherServices from '../components/OtherServices.astro'
+---
+
+<Layout title="Mabrick">
+	<main >
+		<section class=" dark:bg-gray-900 ">
+            <div class="px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Huawei Cloud Everthing as a Service</h1>
+                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Con mas de 100 servicios disponibles, construya, amplie y conecte redes, datos, aplicacioens y personas con Huawei Cloud</p>
+                <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                    <a href="/acercade" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                        Equipo de ventas
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="dark:bg-gray-900">
+            <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Servicios</h2>
+                    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Con una amplia arquitectura de nube desde el despliege aplicaciones y almacen de datos hasta entrenar sus modelos de IA </p>
+                </div> 
+
+
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div class="flex justify-between items-center mb-5 text-gray-500">
+                            <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                                Computacion
+                            </span>
+                            <span class="text-sm">ECS</span>
+                        </div>
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Elastic Cloud Server</a></h2>
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Servicio de infraestructura como servicio (IaaS) que ofrece servidores virtuales escalables y seguros en la nube.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium dark:text-white">
+                                    Infraestructura como Servicio
+                                </span>
+                            </div>
+                            <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                ver más
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
+                        </div>
+                    </article> 
+                    <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div class="flex justify-between items-center mb-5 text-gray-500">
+                            <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                                Contenedores
+                            </span>
+                            <span class="text-sm">CCE</span>
+                        </div>
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Cloud Container Engine</a></h2>
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Permite a las empresas desarrollar, implementar y administrar aplicaciones en contenedores de forma rápida y eficiente.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium dark:text-white">
+                                    Plataforma como sevicio
+                                </span>
+                            </div>
+                            <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                ver más
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div class="flex justify-between items-center mb-5 text-gray-500">
+                            <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                                AI
+                            </span>
+                            <span class="text-sm">AIaaS</span>
+                        </div>
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Huawei Cloud AI</a></h2>
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Incluye una amplia gama de servicios de IA, como Machine Learning, Deep Learning, Visión Artificial y Procesamiento del Lenguaje Natural.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium dark:text-white">
+                                    IA como servicio
+                                </span>
+                            </div>
+                            <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                ver más
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
+                        </div>
+                    </article> 
+                    <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div class="flex justify-between items-center mb-5 text-gray-500">
+                            <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                                Blockchain
+                            </span>
+                            <span class="text-sm">BaaS</span>
+                        </div>
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Huawei Blockchain Service</a></h2>
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Ofrece servicios de Blockchain completos, como creación de cadenas de bloques, gestión de identidades y transacciones seguras.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium dark:text-white">
+                                    Blockchain como servicio
+                                </span>
+                            </div>
+                            <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                ver más
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
+                        </div>
+                    </article>                    
+                </div>  
+            </div>
+          </section>
+          
+
+
+		<slot/>
+	</main>
+</Layout>
