@@ -8,8 +8,8 @@ stages:
 commit_ejecucion:
     stage: mensaje-commit
     script:
-        -echo "Mensaje del commit => $(git log -1 --pretty=%B)"
-        -echo "Usuario => $(git log -1 --pretty=%an)"
+        - echo "Mensaje del commit => $(git log -1 --pretty=%B)"
+        - echo "Usuario => $(git log -1 --pretty=%an)"
 
 
 instalacion_automatizada_de_dependencias:
