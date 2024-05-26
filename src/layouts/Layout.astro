@@ -3,8 +3,6 @@
 import { ViewTransitions } from 'astro:transitions';
 import '@fontsource-variable/onest';
 import Header from '../components/Header.astro';
-import HeroSection from '../components/HeroSection.astro';
-import Features from '../components/Features.astro';
 import Footer from '../components/Footer.astro';
 
 interface Props {
@@ -33,7 +31,7 @@ const { title } = Astro.props;
 		</script>
 	</head>
 	
-	<body class="relative text-black dark:text-white">
+	<body class="relative text-black dark:text-white ">
 
 		<div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 		<Header/> 
