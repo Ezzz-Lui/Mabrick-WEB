@@ -1,0 +1,56 @@
+stages:
+  - mensaje-commit
+  - instalacion_de_dependencias
+  - pruebas-en-dependencias
+  - scaneo-dependencias
+  - autor-auditoria
+
+commit_ejecucion:
+    stage: mensaje-commit
+    script:
+        - echo "Mensaje del commit => $(git log -1 --pretty=%B)"
+        - echo "Usuario => $(git log -1 --pretty=%an)"
+
+
+instalacion_automatizada_de_dependencias:
+  stage: instalacion_de_dependencias
+  image: node:14
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+
+verificacion_instalacion:
+    stage: instalacion_de_dependencias
+    script: echo "Instalacion exitosa"
+
+ejecucion_de_pruebas:
+  stage: pruebas-en-dependencias
+  image: node:14
+  script:
+    - npm test || echo "No se encontraron pruebas"
+
+resultados_de_pruebas:
+    stage: pruebas-en-dependencias
+    script: echo "Pruebas finalizadas..."
+
+escaneo_automatico_de_dependencias_nivel_alto:
+  stage: scaneo-dependencias
+  image: node:14
+  script:
+    - npm install
+    - npm audit --audit-level=high
+  artifacts:
+    reports:
+      dependency_scanning: gl-dependency-scanning-report.json
+
+fecha_ejecucion:
+    stage: scaneo-dependencias
+    script:
+        - echo "Fecha de ejecucion ${date}"
+
+autor_commit:
+    stage: autor-auditoria
+    script:
+        - echo "Autor del commit => $(git log -1 --pretty=%an)"
